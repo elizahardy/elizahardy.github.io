@@ -1,0 +1,168 @@
+/* Eliza Hardy */
+
+/* Refrenced demo 1 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+}
+
+a {
+    color: rgb(165, 165, 19);
+}
+
+a:visited {
+    color: rgb(103, 103, 2);
+}
+
+a:hover {
+    color: rgb(151, 173, 117);
+}
+
+section {
+    padding: 15px;
+    background-color: rgba(145, 145, 89, 0.325);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(90, 90, 50, 0.13);
+    margin: 20px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+
+body {
+    font-family: Garamond, sans-serif;
+    line-height: 1.6;
+    word-spacing: 2px;
+    color: #333;
+    max-width: 800px;
+    margin:  auto;
+    padding: 50px;
+    position: relative;
+}
+
+body:before {
+    content: "body";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('csbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+img {
+    max-width: 150px;
+    display: block;
+    border: 2px solid olive;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.scene-container {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #a3aa87ad;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scene-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.scene-description {
+    font-style: italic;
+    color: #666;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid #b4c29b;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.code-container {
+    background-color: #555a42;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    overflow-x: auto;
+    border-left: 4px solid #b4c29b;
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e2e8f0;
+    display: block;
+    white-space: pre;
+}
+
+.keyword{
+    color: #d0ff00;
+}
+
+.function{
+    color: #fd56d3;
+}
+
+.parameter{
+    color: #9ead44;
+}
+
+.string{ 
+    color: #ffb3ee;
+}
+
+.comment{
+    color: #f5eb8e;
+}
+
+li{
+    flex: 1 1;
+    border-radius: 12px;
+    padding: 5px;
+    background-color: rgb(130, 137, 118);
+    border: 1px solid rgb(106, 116, 97);
+    list-style-type: none;
+    vertical-align: middle;
+    text-align: center;
+    transition: transform 0.1s ease-in, color 0.1s ease-in;
+}
+
+li:hover{
+    color:rgb(170, 170, 115);
+    transform: translateY(-2px);
+}
+
+ul {
+    display: flex;
+    list-style-type: disc;
+    margin-block-start: 5px;
+    margin-block-end: 10px;
+    unicode-bidi: isolate;
+}
